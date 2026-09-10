@@ -26,42 +26,42 @@ void main() {
 
   // Question 04
 
-  print("Enter number from 1 to 10");
-  int number = int.parse(stdin.readLineSync()!);
+  // print("Enter number from 1 to 10");
+  // int number = int.parse(stdin.readLineSync()!);
   
-  print("Table of $number");
+  // print("Table of $number");
 
-  for(int m = 1; m <=10 ; m++){
-    print("$number x $m = ${number * m}");
-  }
+  // for(int m = 1; m <=10 ; m++){
+  //   print("$number x $m = ${number * m}");
+  // }
 
   // Question 05
 
-  int choice;
+  // int choice;
 
-  do {
-    print("\n--Menu--");
-    print("1. Add");
-    print("2. View");
-    print("3. Exit");
-    print("Enter Your Choice: ");
+  // do {
+  //   print("\n--Menu--");
+  //   print("1. Add");
+  //   print("2. View");
+  //   print("3. Exit");
+  //   print("Enter Your Choice: ");
 
-    choice = int.parse(stdin.readLineSync()!);
+  //   choice = int.parse(stdin.readLineSync()!);
 
-    if(choice == 1){
-      print("Add selected");
-    }
-    else if (choice == 2){
-      print("View Selected");
-    }
-    else if (choice == 3){
-      print("Exit");
-    }
-    else{
-      print("Invalid input");
-    }
+  //   if(choice == 1){
+  //     print("Add selected");
+  //   }
+  //   else if (choice == 2){
+  //     print("View Selected");
+  //   }
+  //   else if (choice == 3){
+  //     print("Exit");
+  //   }
+  //   else{
+  //     print("Invalid input");
+  //   }
 
-  } while (choice != 3);
+  // } while (choice != 3);
 
   // Question 06
 
@@ -91,14 +91,14 @@ void main() {
 
   // Question 09
 
-  print("Enter a number: ");
-  int ch = int.parse(stdin.readLineSync()!);
+  // print("Enter a number: ");
+  // int ch = int.parse(stdin.readLineSync()!);
 
-  int a = 1;
-  while(a<=ch){
-    print(a);
-    a++;
-  }
+  // int a = 1;
+  // while(a<=ch){
+  //   print(a);
+  //   a++;
+  // }
 
   // Question 10
 
@@ -106,6 +106,24 @@ void main() {
   for(String fruit in fruits){
     print(fruit);
   }
+
+  // Question 11
+
+  int t = 7;
+  int b = 1;
+  while(b<=10){
+    print("$t x $b = ${t * b}");
+    b++;
+  }
+
+  // Question 12
+
+  int c = 20;
+
+  do {
+    print(c);
+    c--;
+  } while (c>=1);
 
 
 
