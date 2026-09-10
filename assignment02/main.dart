@@ -135,9 +135,133 @@ void main() {
 
   // Question 10
 
-  List namess = ["Ali","sara","Ahmed","Ali", "Noor", "Sara","Nabeel"];
+  List namess = ["Ali","Sara","Ahmed","Ali", "Noor", "Sara","Nabeel"];
 
   List uniqueNames = namess.toSet().toList();
   print(uniqueNames);
+
+  // Question 11
+
+  List friuts = ["apple","banana","mango","orange","grapes","kiwi"];
+  int n=3;
+  
+  List newFruits = friuts.sublist(0, n);
+  print(newFruits);
+
+  // Question 12
+
+  List vegetables = ["carrot","broccoli","spinach","potato","tomato"];
+  List reversedVegetables = vegetables.reversed.toList();
+  print("Original List: $vegetables");
+  print("Reversed List: $reversedVegetables");
+
+  // Question 13
+
+  List numberslist = [78, 45, 23, 89, 45, 67, 12, 23, 90, 34];
+  List uniquenumbers = numberslist.toSet().toList();
+  print("Original List: $numberslist");
+  print("Unique Numbers List: $uniquenumbers");
+
+  // Question 14
+
+  List nomberslist = [12, 45, 23, 67, 34, 89, 56];
+  List sortedlist = List.from(nomberslist)..sort();
+  print("Original List: $nomberslist");
+  print("Sorted List: $sortedlist");
+
+  // Question 15
+
+  List mixnumbers = [18,-5, 12, -9, 34, -2, 45, -7];
+  List positivenumbers = mixnumbers.where((number) => number > 0).toList();
+  print("Original List: $mixnumbers");
+  print("Positive Numbers List: $positivenumbers");
+
+  // Question 16
+
+  List wholenumbers = [0,1,2,3,4,5,6,7,8,9,10];
+  List evennumbers = wholenumbers.where((number) => number % 2==0).toList();
+  print("Original List: $wholenumbers");
+  print("Even Numbers List: $evennumbers");
+
+  // Question 17
+
+  List squared = wholenumbers.map((number) => number * number ).toList();
+  print("Original List: $wholenumbers");
+  print("Squared Numbers List: $squared");
+
+  // Question 18
+
+  Map person = {
+    "name": "John",
+    "age": 25,
+    "isStudent": true
+  };
+
+  if(person["age"]>18 && person["isStudent"]==true){
+    print("Eligible");
+  }
+  else{
+    print("Not Eligible");
+  }
+
+  // Question 19
+
+  Map product = {
+    "name": "Laptop",
+    "price": 1500,
+    "quantity": 5
+  };
+
+  if(product["quantity"]>0){
+    print("In Stock");
+  }
+  else{
+    print("Out of Stock");
+  }
+
+  // Question 20
+
+  Map car = {
+    "brand": "Toyota",
+    "color": "Red",
+    "isSedan": true
+  };
+
+  if(car["isSedan"] == true && car["color"]=="Red"){
+    print("Match");
+  }
+  else{
+    print("Not Match");
+  }
+
+  // Question 21
+
+  Map user = {
+    "name": "Alice",
+    "isAdmin": true,
+    "isActive": true
+  };
+
+  if(user["isAdmin"] == true && user["isActive"] == true){
+    print("Active Admin");
+  }
+  else{
+    print("Not Active Admin");
+  }
+
+  // Question 22
+
+  Map ShoppingCart = {
+    "Product Name": "Apple",
+    "Quantities": 5,
+  };
+
+  if(ShoppingCart["Product Name"] == "Apple"){
+    print("Product Found");
+  }
+  else{
+    print("Product Not Found");
+  }
+  
 
 }
