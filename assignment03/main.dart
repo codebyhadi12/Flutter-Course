@@ -26,42 +26,42 @@ void main() {
 
   // Question 04
 
-  // print("Enter number from 1 to 10");
-  // int number = int.parse(stdin.readLineSync()!);
+  print("Enter number from 1 to 10");
+  int number = int.parse(stdin.readLineSync()!);
   
-  // print("Table of $number");
+  print("Table of $number");
 
-  // for(int m = 1; m <=10 ; m++){
-  //   print("$number x $m = ${number * m}");
-  // }
+  for(int m = 1; m <=10 ; m++){
+    print("$number x $m = ${number * m}");
+  }
 
   // Question 05
 
-  // int choice;
+  int choice;
 
-  // do {
-  //   print("\n--Menu--");
-  //   print("1. Add");
-  //   print("2. View");
-  //   print("3. Exit");
-  //   print("Enter Your Choice: ");
+  do {
+    print("\n--Menu--");
+    print("1. Add");
+    print("2. View");
+    print("3. Exit");
+    print("Enter Your Choice: ");
 
-  //   choice = int.parse(stdin.readLineSync()!);
+    choice = int.parse(stdin.readLineSync()!);
 
-  //   if(choice == 1){
-  //     print("Add selected");
-  //   }
-  //   else if (choice == 2){
-  //     print("View Selected");
-  //   }
-  //   else if (choice == 3){
-  //     print("Exit");
-  //   }
-  //   else{
-  //     print("Invalid input");
-  //   }
+    if(choice == 1){
+      print("Add selected");
+    }
+    else if (choice == 2){
+      print("View Selected");
+    }
+    else if (choice == 3){
+      print("Exit");
+    }
+    else{
+      print("Invalid input");
+    }
 
-  // } while (choice != 3);
+  } while (choice != 3);
 
   // Question 06
 
@@ -91,14 +91,14 @@ void main() {
 
   // Question 09
 
-  // print("Enter a number: ");
-  // int ch = int.parse(stdin.readLineSync()!);
+  print("Enter a number: ");
+  int ch = int.parse(stdin.readLineSync()!);
 
-  // int a = 1;
-  // while(a<=ch){
-  //   print(a);
-  //   a++;
-  // }
+  int a = 1;
+  while(a<=ch){
+    print(a);
+    a++;
+  }
 
   // Question 10
 
@@ -124,6 +124,94 @@ void main() {
     print(c);
     c--;
   } while (c>=1);
+
+  // Question 13
+
+  List numberr = [];
+
+  for (int d = 1; d <= 5; d++){
+    print("Enter Your $d Number: ");
+    int nom = int.parse(stdin.readLineSync()!);
+    numberr.add(nom);
+  }
+
+  print(number);
+
+  // Question 14
+
+  List marks = [45, 67, 89, 90, 34, 56, 78, 12, 23, 45];
+
+  for(int mark in marks){
+    if(mark > 50){
+      print(mark);
+    }
+  }
+
+  // Question 15
+
+  int e = 1;
+  int sum = 0;
+
+  while(e <=10){
+    sum += e;
+    e++;
+  }
+
+  print("Total: $sum");
+
+  // Question 16
+
+  int nomber = 1;
+
+  do {
+    if(nomber % 2 != 0){
+      print(nomber);
+    }
+    nomber++;
+  } while (nomber<=15);
+
+  // Question 17
+
+  List cities = ["Karachi","Lahore","Islamabad","Quetta","Peshawar"];
+  for(String city in cities){
+    print(city);
+  }
+
+  // Question 18
+
+  print("Enter a table number: ");
+
+  int numm = int.parse(stdin.readLineSync()!);
+  print("Table of $numm");
+  for(int f=10; f>=1; f--){
+    print("$numm x $f = ${numm * f}");
+  }
+
+  // Question 19
+
+  int nums;
+
+  print("Enter numbers.\n Enter 0 to stop.");
+
+  while(true){
+    print("Enter a number: ");
+    nums = int.parse(stdin.readLineSync()!);
+
+    if(nums == 0){
+      print("You enter 0 and program is stop");
+      break;
+    }
+
+  }
+
+  // Question 20
+
+  List prices = [150,230,340,120,450,560,670,780,890,900];
+  for(int price in prices){
+    print("Rs.$price");
+  }
+
+
 
 
 
